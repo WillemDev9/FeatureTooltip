@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FeatureTooltipExt</title>
-    <base href="/" />
-    <link href="_framework/dotnet.x3i4fwtucy.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-U4yDl1gjbVaoa3dH5EnAcC2vnPLGaB1YcE9DjO+s3S0=" />
+    <base href="/FeatureTooltip/" />
+    <link href="_framework/dotnet.qvn9ykii3h.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-JrOJwNNFQ0AFsHImytayzsLJ2Ou5+RotOiRKw0GU//0=" />
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
@@ -15,8 +15,8 @@
   "imports": {
     "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.66stpp682q.js",
     "./_framework/dotnet.native.js": "./_framework/dotnet.native.cs8mcre4gh.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.qvn9ykii3h.js",
     "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.0j6ezsi0n0.js",
-    "./_framework/dotnet.js": "./_framework/dotnet.x3i4fwtucy.js",
     "./bridge.js": "./bridge.5ipweew5fc.js",
     "./lib/bootstrap/dist/js/bootstrap.js": "./lib/bootstrap/dist/js/bootstrap.5zdyveyhp9.js",
     "./lib/bootstrap/dist/js/bootstrap.bundle.min.js": "./lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js",
@@ -29,12 +29,12 @@
   "integrity": {
     "./_framework/blazor.webassembly.66stpp682q.js": "sha256-3lCWrko3zwspV40aQhs2S/IMkRSarnHRKIdkHhuXIBA=",
     "./_framework/blazor.webassembly.js": "sha256-3lCWrko3zwspV40aQhs2S/IMkRSarnHRKIdkHhuXIBA=",
-    "./_framework/dotnet.js": "sha256-U4yDl1gjbVaoa3dH5EnAcC2vnPLGaB1YcE9DjO+s3S0=",
+    "./_framework/dotnet.js": "sha256-JrOJwNNFQ0AFsHImytayzsLJ2Ou5+RotOiRKw0GU//0=",
     "./_framework/dotnet.native.cs8mcre4gh.js": "sha256-/I3SDHIle7heAxlUGBrgxax+lkKyWyRLBVEJmTHJSCs=",
     "./_framework/dotnet.native.js": "sha256-/I3SDHIle7heAxlUGBrgxax+lkKyWyRLBVEJmTHJSCs=",
+    "./_framework/dotnet.qvn9ykii3h.js": "sha256-JrOJwNNFQ0AFsHImytayzsLJ2Ou5+RotOiRKw0GU//0=",
     "./_framework/dotnet.runtime.0j6ezsi0n0.js": "sha256-jCsbbdXoVd1zzGc0fQT2sz4mKuv0ANdurPVGo5Sc2jg=",
     "./_framework/dotnet.runtime.js": "sha256-jCsbbdXoVd1zzGc0fQT2sz4mKuv0ANdurPVGo5Sc2jg=",
-    "./_framework/dotnet.x3i4fwtucy.js": "sha256-U4yDl1gjbVaoa3dH5EnAcC2vnPLGaB1YcE9DjO+s3S0=",
     "./bridge.5ipweew5fc.js": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
     "./bridge.js": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
     "./lib/bootstrap/dist/js/bootstrap.5zdyveyhp9.js": "sha256-v60oRUib4N2HPP3oJJ9v8P3kTC9FaB2di/eWHofKePQ=",
@@ -68,6 +68,14 @@
         <span class="dismiss">🗙</span>
     </div>
     <script src="_framework/blazor.webassembly.66stpp682q.js"></script>
+    <script>
+    // Force Blazor to use Hash routing to avoid GitHub 404s
+    window.addEventListener('load', function() {
+        if (!window.location.hash && window.location.pathname !== '/FeatureTooltip/') {
+            window.location.hash = window.location.pathname.replace('/FeatureTooltip/', '');
+        }
+    });
+</script>
 </body>
 
 </html>
