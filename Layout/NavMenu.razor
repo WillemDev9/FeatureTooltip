@@ -12,9 +12,9 @@
 @foreach (var item in _featureList)
 {
     <div class="nav-item px-3">
-        <button class="btn btn-important" style="cursor" @onclick="()=>FeatureService.SelectFeature(item)">
+        <div class="btn btn-important" href="/" @onclick="()=>FeatureService.SelectFeature(item)">
             <span class="bi bi-house-fill-nav-menu" aria-hidden="true"></span> @item.Title
-        </button>
+        </div>
     </div>
 }
 
