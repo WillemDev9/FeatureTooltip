@@ -1,0 +1,5 @@
+/Users/willembasson/Documents/Owlbear-Rodeo-Extensions/FeatureTooltipExt/bin/Release/net10.0/publish/wwwroot/404.html
+/Users/willembasson/Documents/Owlbear-Rodeo-Extensions/FeatureTooltipExt/bin/Release/net10.0/publish/wwwroot/index.html
+/Users/willembasson/Documents/Owlbear-Rodeo-Extensions/FeatureTooltipExt/bin/Release/net10.0/publish/FeatureTooltipExt.runtimeconfig.json
+/Users/willembasson/Documents/Owlbear-Rodeo-Extensions/FeatureTooltipExt/bin/Release/net10.0/publish/dotnet.js
+/Users/willembasson/Documents/Owlbear-Rodeo-Extensions/FeatureTooltipExt/bin/Release/net10.0/publish/web.config
