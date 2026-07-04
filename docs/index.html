@@ -30,6 +30,14 @@
     "./_framework/dotnet.runtime.js": "sha256-jCsbbdXoVd1zzGc0fQT2sz4mKuv0ANdurPVGo5Sc2jg="
   }
 }</script>
+<script>
+    (function () {
+        var path = new URLSearchParams(window.location.search).get('path');
+        if (path) {
+            window.history.replaceState(null, '', path);
+        }
+    })();
+</script>
 </head>
 
 <body>
