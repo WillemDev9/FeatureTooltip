@@ -1,0 +1,31 @@
+﻿@page "/"
+@inject FeatureService FeatureService
+@implements IDisposable
+
+<div class="content-area">
+    @if (FeatureService.SelectedFeature == null)
+    {
+        <h2>Welcome to your Tooltip Manager</h2>
+
+        <p>Select a saved feature in the side bar to see what that feature does.</p>
+        <p>Or, if there aren't any, click on 'Add New Feature' to add one.</p>
+    }
+    else
+    {
+        <FeatureDisplay Feature="FeatureService.SelectedFeature" />
+    }
+</div>
+
+@code
+{
+    protected override void OnInitialized()
+    {
+        FeatureService.OnSelectionChanged += StateHasChanged;
+    }
+    public void Dispose()
+    {
+        FeatureService.OnSelectionChanged -= StateHasChanged;
+    }
+    
+}
+

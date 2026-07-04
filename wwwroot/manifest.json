@@ -1,0 +1,12 @@
+{
+  "name": "Feature Tooltip",
+  "version": "1.0.0",
+  "manifest_version": 1,
+  "action": {
+    "title": "Feature Tooltips",
+    "icon": "favicon.png",
+    "popover": "icon-192.png",
+    "width": 650,
+    "height": 550
+  }
+}

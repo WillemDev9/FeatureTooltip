@@ -1,0 +1,32 @@
+@page "/add-feature"
+@inject FeatureService FeatureService
+@inject NavigationManager Nav
+
+<h2>Add New Feature</h2>
+
+<EditForm Model="_newFeature" OnValidSubmit="HandleSubmit">
+    <div class="mb-3">
+        <label for="featureTitle" class="form-label font-weight-bold">Title</label>
+        <InputText id="featureTitle" class="form-control" @bind-Value="_newFeature.Title" placeholder="e.g DarkVision 60ft" />
+    </div>
+
+    <div class="mb-3">
+        <label for="featureDescription" class="form-label font-weight-bold">Description</label>
+        <InputTextArea id="featureDescription" class="form-control" @bind-Value="_newFeature.Description" placeholder="e.g. You can see in the Dark up to 60 ft." />
+    </div>
+
+    <div class="mt-4">
+        <button type="submit" class="btn btn-primary">Save Feature</button>
+    </div>
+</EditForm>
+
+@code
+{
+    FeatureItem _newFeature = new();
+
+    private async Task HandleSubmit()
+    {
+        await FeatureService.AddFeature(_newFeature);
+        Nav.NavigateTo("/");
+    }
+}

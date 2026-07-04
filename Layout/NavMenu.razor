@@ -1,0 +1,50 @@
+﻿@inject FeatureService FeatureService
+@implements IDisposable
+
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <h2>Features</h2>
+    </div>
+</div>
+
+<nav class="nav flex-column">
+
+@foreach (var item in _featureList)
+{
+    <div class="nav-item px-3">
+        <NavLink class="nav-link" href="/" @onclick="()=>FeatureService.SelectFeature(item)">
+            <span class="bi bi-house-fill-nav-menu" aria-hidden="true"></span> @item.Title
+        </NavLink>
+    </div>
+}
+
+<div class="nav-item px-3">
+    <NavLink class="nav-link" href="add-feature">
+        <span class="bi bi-plus-square" aria-hidden="true"></span>Add new Feature
+    </NavLink>
+</div>
+
+</nav>
+
+
+@code {
+
+    private List<FeatureItem> _featureList = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _featureList = await FeatureService.GetFeatureList(); 
+
+        FeatureService.OnListChanged += RefreshList;
+    }
+    private async void RefreshList()
+    {
+        _featureList = await FeatureService.GetFeatureList();
+        await InvokeAsync(StateHasChanged);
+    }
+    public void Dispose()
+    {
+        FeatureService.OnListChanged -= RefreshList;
+    }
+
+}
