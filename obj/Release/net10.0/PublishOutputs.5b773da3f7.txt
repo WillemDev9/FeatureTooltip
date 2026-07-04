@@ -1,7 +1,5 @@
 /Users/willembasson/Documents/Owlbear-Rodeo-Extensions/FeatureTooltipExt/bin/Publish/wwwroot/404.html
 /Users/willembasson/Documents/Owlbear-Rodeo-Extensions/FeatureTooltipExt/bin/Publish/wwwroot/index.html
-/Users/willembasson/Documents/Owlbear-Rodeo-Extensions/FeatureTooltipExt/bin/Publish/docs/manifest.json
-/Users/willembasson/Documents/Owlbear-Rodeo-Extensions/FeatureTooltipExt/bin/Publish/docs/sample-data/weather.json
 /Users/willembasson/Documents/Owlbear-Rodeo-Extensions/FeatureTooltipExt/bin/Publish/FeatureTooltipExt.runtimeconfig.json
 /Users/willembasson/Documents/Owlbear-Rodeo-Extensions/FeatureTooltipExt/bin/Publish/dotnet.js
 /Users/willembasson/Documents/Owlbear-Rodeo-Extensions/FeatureTooltipExt/bin/Publish/web.config

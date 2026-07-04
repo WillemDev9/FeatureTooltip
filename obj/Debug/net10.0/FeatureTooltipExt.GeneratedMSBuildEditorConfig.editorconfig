@@ -47,3 +47,15 @@ build_metadata.AdditionalFiles.CssScope =
 [/Users/willembasson/Documents/Owlbear-Rodeo-Extensions/FeatureTooltipExt/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/willembasson/Documents/Owlbear-Rodeo-Extensions/FeatureTooltipExt/Layout/FeatureDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L0ZlYXR1cmVEaXNwbGF5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-504s3elkz5
+
+[/Users/willembasson/Documents/Owlbear-Rodeo-Extensions/FeatureTooltipExt/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ncwhljjj0e
+
+[/Users/willembasson/Documents/Owlbear-Rodeo-Extensions/FeatureTooltipExt/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-agwxh7hk12

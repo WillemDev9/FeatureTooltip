@@ -29,14 +29,18 @@
         <span class="dismiss">🗙</span>
     </div>
     <script src="_framework/blazor.webassembly#[.{fingerprint}].js"></script>
+
     <script>
-    // Force Blazor to use Hash routing to avoid GitHub 404s
-    window.addEventListener('load', function() {
-        if (!window.location.hash && window.location.pathname !== '/FeatureTooltip/') {
-            window.location.hash = window.location.pathname.replace('/FeatureTooltip/', '');
+        // This script automatically redirects clean paths to hash paths
+        // ONLY when hosted on GitHub Pages (or when the path starts with /FeatureTooltip/)
+        if (window.location.pathname.includes('/FeatureTooltip/') && !window.location.hash) {
+            var path = window.location.pathname.replace('/FeatureTooltip/', '');
+            if (path && path !== "") {
+                window.location.replace('/FeatureTooltip/#' + path);
+            }
         }
-    });
-</script>
+    </script>
+
 </body>
 
 </html>
