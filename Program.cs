@@ -14,3 +14,5 @@ builder.Services.AddBlazoredLocalStorage();
 builder.Services.AddScoped<FeatureService>();
 
 await builder.Build().RunAsync();
+
+//Comment
