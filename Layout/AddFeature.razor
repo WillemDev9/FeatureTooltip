@@ -1,4 +1,4 @@
-@page "/add-feature"
+@* @page "/add-feature" *@
 @inject FeatureService FeatureService
 @inject NavigationManager Nav
 
@@ -27,6 +27,6 @@
     private async Task HandleSubmit()
     {
         await FeatureService.AddFeature(_newFeature);
-        Nav.NavigateTo("/");
+        @* Nav.NavigateTo("/"); *@
     }
 }
