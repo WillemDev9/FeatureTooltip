@@ -5,7 +5,7 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
   "mainAssemblyName": "FeatureTooltipExt",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-BDuniNdqrWjAT86yiZT2h+sF/H+IgjodJVs00ozB/Aw=",
+    "hash": "sha256-R2c7zTRFSNjyxO8KhL2z+JlboIJHpNuvHYMTiZSB4jY=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.cs8mcre4gh.js"
@@ -1039,15 +1039,15 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "FeatureTooltipExt.wasm",
-        "name": "FeatureTooltipExt.3yn90k5xtz.wasm",
-        "integrity": "sha256-hb5pdiJ791zwBNIHtBB8Y9hp3ioqJOKjjOK6LIalwHU="
+        "name": "FeatureTooltipExt.akuawu2315.wasm",
+        "integrity": "sha256-OvEoO0I8guYslh0qptG17LcBkQF6hb+KI8AMuT9pabU="
       }
     ],
     "pdb": [
       {
         "virtualPath": "FeatureTooltipExt.pdb",
-        "name": "FeatureTooltipExt.1ty4uhlpf7.pdb",
-        "integrity": "sha256-NdskKwihFgRed/3buDqD2U/QXGT9PUWWGHVhDULWJWI="
+        "name": "FeatureTooltipExt.onfw2ck46q.pdb",
+        "integrity": "sha256-vLZRdECoGyeBHEkHtVveYAgJ2yfWHLDFSu4+hXyUxNw="
       }
     ]
   },

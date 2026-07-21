@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FeatureTooltipExt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+351cc471b1fcb84ca6bb2748a34508af14607b4b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f057014a01f9fdbc120d9594869b00678f382dab")]
 [assembly: System.Reflection.AssemblyProductAttribute("FeatureTooltipExt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FeatureTooltipExt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
