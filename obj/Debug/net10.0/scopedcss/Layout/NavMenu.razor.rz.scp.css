@@ -4,7 +4,7 @@
 
 .top-row[b-agwxh7hk12] {
     min-height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+    /* background-color: rgba(0,0,0,0.4); */
 }
 
 .navbar-brand[b-agwxh7hk12] {
@@ -81,3 +81,10 @@
     overflow-y: auto;
 }
 
+.sidebar-link[b-agwxh7hk12] {
+    color:white;
+}
+
+h2[b-agwxh7hk12] {
+    color: black;
+}
