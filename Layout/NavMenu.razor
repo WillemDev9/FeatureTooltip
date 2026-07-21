@@ -12,16 +12,16 @@
     @foreach (var item in _featureList)
     {
         <div class="nav-item px-3">
-            <div class="nav-link sidebar-link" @onclick="()=>FeatureService.SelectFeature(item)">
+            <button type="button" class="nav-link sidebar-link" @onclick="()=>FeatureService.SelectFeature(item)">
                 <span class="bi bi-house-fill-nav-menu" aria-hidden="true"></span> @item.Title
-            </div>
+            </button>
         </div>
     }
 
     <div class="nav-item px-3">
-        <div class="nav-link sidebar-link" @onclick="()=>FeatureService.SelectFeature(null)">
+        <button type="button" class="nav-link sidebar-link" @onclick="()=>FeatureService.SelectFeature(null)">
             <span class="bi bi-house-fill-nav-menu" aria-hidden="true"></span> Add New Feature
-        </div>
+        </button>
     </div>
 
 </nav>
