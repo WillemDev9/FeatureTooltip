@@ -5,18 +5,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FeatureTooltipExt</title>
-    <base href="/FeatureTooltip/" />
-    <link href="_framework/dotnet.ehyy0syeti.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-7oxAzrHwTgnXoyagVf38rfAM6ixBV3jnE8H+U7pC7O8=" />
+    <base href="/" />
+    <link href="_framework/dotnet.nx6vl02lup.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-JTYk/d8CA9ur2TrW327tq9MDPHAcdFY4ieBqYHM8wwk=" />
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/extension.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link href="FeatureTooltipExt.styles.css" rel="stylesheet" />
     <script type="importmap">{
   "imports": {
     "./_content/Microsoft.DotNet.HotReload.WebAssembly.Browser/Microsoft.DotNet.HotReload.WebAssembly.Browser.lib.module.js": "./_content/Microsoft.DotNet.HotReload.WebAssembly.Browser/Microsoft.DotNet.HotReload.WebAssembly.Browser.99zm1jdh75.lib.module.js",
     "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.66stpp682q.js",
-    "./_framework/dotnet.js": "./_framework/dotnet.ehyy0syeti.js",
     "./_framework/dotnet.native.js": "./_framework/dotnet.native.cs8mcre4gh.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.nx6vl02lup.js",
     "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.0j6ezsi0n0.js",
     "./bridge.js": "./bridge.5ipweew5fc.js",
     "./lib/bootstrap/dist/js/bootstrap.js": "./lib/bootstrap/dist/js/bootstrap.5zdyveyhp9.js",
@@ -32,10 +33,10 @@
     "./_content/Microsoft.DotNet.HotReload.WebAssembly.Browser/Microsoft.DotNet.HotReload.WebAssembly.Browser.lib.module.js": "sha256-A8e6zZwhOqf7lDQqbbCYcAUv4wGE9aQxOo4WyYxR//0=",
     "./_framework/blazor.webassembly.66stpp682q.js": "sha256-3lCWrko3zwspV40aQhs2S/IMkRSarnHRKIdkHhuXIBA=",
     "./_framework/blazor.webassembly.js": "sha256-3lCWrko3zwspV40aQhs2S/IMkRSarnHRKIdkHhuXIBA=",
-    "./_framework/dotnet.ehyy0syeti.js": "sha256-7oxAzrHwTgnXoyagVf38rfAM6ixBV3jnE8H+U7pC7O8=",
-    "./_framework/dotnet.js": "sha256-7oxAzrHwTgnXoyagVf38rfAM6ixBV3jnE8H+U7pC7O8=",
+    "./_framework/dotnet.js": "sha256-JTYk/d8CA9ur2TrW327tq9MDPHAcdFY4ieBqYHM8wwk=",
     "./_framework/dotnet.native.cs8mcre4gh.js": "sha256-/I3SDHIle7heAxlUGBrgxax+lkKyWyRLBVEJmTHJSCs=",
     "./_framework/dotnet.native.js": "sha256-/I3SDHIle7heAxlUGBrgxax+lkKyWyRLBVEJmTHJSCs=",
+    "./_framework/dotnet.nx6vl02lup.js": "sha256-JTYk/d8CA9ur2TrW327tq9MDPHAcdFY4ieBqYHM8wwk=",
     "./_framework/dotnet.runtime.0j6ezsi0n0.js": "sha256-jCsbbdXoVd1zzGc0fQT2sz4mKuv0ANdurPVGo5Sc2jg=",
     "./_framework/dotnet.runtime.js": "sha256-jCsbbdXoVd1zzGc0fQT2sz4mKuv0ANdurPVGo5Sc2jg=",
     "./bridge.5ipweew5fc.js": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -71,6 +72,23 @@
         <span class="dismiss">🗙</span>
     </div>
     <script src="_framework/blazor.webassembly.66stpp682q.js"></script>
+
+    <script>
+        // Automatically adjust base href depending on environment
+        (function () {
+            var base = document.getElementsByTagName('base')[0];
+            var host = window.location.hostname;
+            if (host === 'localhost' || host === '127.0.0.1') {
+                base.setAttribute('href', '/');
+            } else {
+                // Extracts your GitHub repository name subdirectory automatically from the URL path
+                var pathSegments = window.location.pathname.split('/').filter(Boolean);
+                if (pathSegments.length > 0) {
+                    base.setAttribute('href', '/' + pathSegments[0] + '/');
+                }
+            }
+        })();
+    </script>
 
     <script>
         // This script automatically redirects clean paths to hash paths

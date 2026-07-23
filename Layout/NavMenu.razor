@@ -13,14 +13,14 @@
     {
         <div class="nav-item px-3">
             <button type="button" class="nav-link sidebar-link" @onclick="()=>FeatureService.SelectFeature(item)">
-                <span class="bi bi-house-fill-nav-menu" aria-hidden="true"></span> @item.Title
+                @item.Title
             </button>
         </div>
     }
 
     <div class="nav-item px-3">
-        <button type="button" class="nav-link sidebar-link" @onclick="()=>FeatureService.SelectFeature(null)">
-            <span class="bi bi-house-fill-nav-menu" aria-hidden="true"></span> Add New Feature
+        <button type="button" class="nav-link sidebar-link sidebar-link-important" @onclick="()=>FeatureService.SelectFeature(null)">
+            Add New Feature
         </button>
     </div>
 

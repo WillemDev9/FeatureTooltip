@@ -2,14 +2,9 @@
 @inject FeatureService FeatureService
 @implements IDisposable
 
-<div class="content-area">
+<div class="content-area extension-background">
     @if (FeatureService.SelectedFeature == null)
     {
-        @* <h2>Welcome to your Tooltip Manager</h2>
-
-        <p>Select a saved feature in the side bar to see what that feature does.</p>
-        <p>Or, if there aren't any, click on 'Add New Feature' to add one.</p> *@
-
         <AddFeature></AddFeature>
     }
     else

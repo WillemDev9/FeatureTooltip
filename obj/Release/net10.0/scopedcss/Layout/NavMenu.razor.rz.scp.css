@@ -83,8 +83,23 @@
 
 .sidebar-link[b-agwxh7hk12] {
     color:white;
+    text-align: center;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: rgba(96, 130, 171, 0);
+    transition: background-color 0.3s ease-in-out;
+}
+.sidebar-link:hover[b-agwxh7hk12] {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.sidebar-link-important[b-agwxh7hk12] {
+    background-color: rgba(96, 130, 171, 0.5);
+    border: 1px solid rgba(96, 130, 171, 0.75);
+}
+.sidebar-link-important:hover[b-agwxh7hk12] {
+    background-color: rgba(96, 130, 171, 1);
+    border: 1px solid rgba(96, 130, 171, 1);
 }
 
-h2[b-agwxh7hk12] {
-    color: black;
-}
+
