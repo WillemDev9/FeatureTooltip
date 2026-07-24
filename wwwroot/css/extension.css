@@ -1,5 +1,6 @@
-body {
+html, body {
     color: white;
+    background-color: rgba(42, 123, 150, 0) !important;
 }
 
 .btn {
