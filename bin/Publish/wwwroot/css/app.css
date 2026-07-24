@@ -4,6 +4,7 @@ html, body {
     height: 550px;
     margin: 0;
     padding: 0;
+    background-color: rgba(42, 123, 150, 0) !important;
     overflow: hidden;
 }
 .app-container {
